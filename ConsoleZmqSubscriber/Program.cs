@@ -35,7 +35,7 @@ namespace ConsoleZmqSubscriber
                     subSocket.SubscribeAll();
                     while (true)
                     {
-                        var message = subSocket.Receive(Encoding.Unicode); 
+                        var message = subSocket.Receive(Encoding.UTF8); 
                         Console.WriteLine(message);
                         Console.WriteLine();
                     }
